@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stormy</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem; background: #0f0f1a; color: #e0e0ff; }
+    #chat { max-width: 600px; margin: auto; }
+    #messages { min-height: 300px; border: 1px solid #444; padding: 1rem; margin-bottom: 1rem; overflow-y: auto; background: #1a1a2e; }
+    .msg { margin: 0.5rem 0; padding: 0.8rem; border-radius: 8px; }
+    .user { background: #0066cc; align-self: flex-end; }
+    .bot  { background: #333366; }
+    form { display: flex; gap: 0.5rem; }
+    input { flex: 1; padding: 0.8rem; background: #222; border: 1px solid #555; color: white; }
+    button { padding: 0.8rem 1.5rem; background: #0066cc; border: none; color: white; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div id="chat">
+    <h1>Stormy</h1>
+    <div id="messages"></div>
+    <form id="form">
+      <input id="input" placeholder="Ask me anything..." autocomplete="off" autofocus />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="/static/main.js"></script>
+</body>
+  </html>
